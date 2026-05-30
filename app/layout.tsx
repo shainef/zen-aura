@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Josefin_Sans } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${josefin.variable} h-full`}>
       <body className="min-h-full" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+        <ScrollToTop />
         {children}
       </body>
     </html>
