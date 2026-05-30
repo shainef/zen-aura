@@ -125,6 +125,15 @@ export default function Hero() {
                 See How It Works
               </a>
             </div>
+            <p className="mt-4 text-sm text-[#4A4A4A]">
+              Not ready for a full package?{" "}
+              <a
+                href="#a-la-carte"
+                className="font-semibold text-[#013D5A] underline underline-offset-2 hover:text-[#003F47] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#013D5A] focus-visible:ring-offset-2"
+              >
+                Try Us First
+              </a>
+            </p>
           </div>
 
           {/* Right: Floating white stats card */}

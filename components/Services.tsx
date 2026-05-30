@@ -144,7 +144,7 @@ export default function Services() {
         </div>
 
         {/* À La Carte */}
-        <div>
+        <div id="a-la-carte">
           {/* "Try Us First" tab */}
           <div className="flex justify-center mb-0">
             <div
@@ -192,7 +192,7 @@ export default function Services() {
               <ul className="flex-1 flex flex-col justify-center" style={{ padding: "8px 0" }}>
                 {[
                   { label: "Small / Medium",  sub: "Chairs, tables, lamps, décor, mirrors", price: "$75" },
-                  { label: "Large / Premium", sub: "Sofas, beds, rugs, antiques, designer",  price: "$200" },
+                  { label: "Large / Premium", sub: "Sofas, beds, rugs, antiques & high-value pieces", price: "$200" },
                 ].map(({ label, sub, price }) => (
                   <li key={label} className="flex items-center justify-between" style={{ padding: "20px 20px", borderBottom: "1px solid var(--gray-100)" }}>
                     <div>
