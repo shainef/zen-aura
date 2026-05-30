@@ -49,7 +49,7 @@ export default function ContactForm() {
             </p>
             <div className="space-y-6">
               {[
-                { label: "Email", value: "hello@zenaura.com" },
+                { label: "Email", value: "hello@zenaura.design" },
                 { label: "Instagram", value: "@zenaura" },
                 { label: "Serving", value: "Your area" },
               ].map(({ label, value }) => (
