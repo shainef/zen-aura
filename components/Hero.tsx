@@ -58,8 +58,8 @@ export default function Hero() {
             </p>
             <h1
               className="font-bold mb-6"
-              style={{ color: "var(--charcoal)" }}
               style={{
+                color: "var(--charcoal)",
                 fontSize: "clamp(40px, 5vw, 72px)",
                 letterSpacing: "-0.02em",
                 lineHeight: 1.1,
