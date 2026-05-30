@@ -50,7 +50,7 @@ export default function ContactForm() {
             <div className="space-y-6">
               {[
                 { label: "Email", value: "hello@zenaura.design" },
-                { label: "Instagram", value: "@zenaura" },
+                { label: "Instagram", value: "@zenaura.design" },
                 { label: "Serving", value: "Your area" },
               ].map(({ label, value }) => (
                 <div key={label}>

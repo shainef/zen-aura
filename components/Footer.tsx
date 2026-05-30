@@ -61,7 +61,7 @@ export default function Footer() {
             onMouseLeave={(e) => (e.currentTarget.style.color = "var(--gray-400)")}
           >
             <Camera size={15} />
-            @zenaura
+            @zenaura.design
           </a>
         </div>
 
