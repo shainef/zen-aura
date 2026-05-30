@@ -61,8 +61,8 @@ export default function ROICalculator() {
   const roomLabel = roomTypes.find((r) => r.value === roomType)?.label ?? "Living Room";
 
   return (
-    <section id="calculator" style={{ background: "var(--warm-neutral)", padding: "96px 0" }}>
-      <div className="max-w-4xl mx-auto px-6 lg:px-8">
+    <section id="calculator" style={{ background: "var(--warm-neutral)", padding: "clamp(48px, 8vw, 96px) 0" }}>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-12">
@@ -85,7 +85,7 @@ export default function ROICalculator() {
           <p className="text-center font-semibold mb-6" style={{ fontSize: "18px", color: "var(--charcoal)" }}>
             Select Your Service Tier
           </p>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
             {tiers.map((tier) => {
               const active = selectedTier === tier.id;
               return (
@@ -99,10 +99,11 @@ export default function ROICalculator() {
                     background: active ? "rgba(1,61,90,0.03)" : "var(--white)",
                     border: active ? "3px solid var(--teal-primary)" : "2px solid var(--gray-300)",
                     borderRadius: "12px",
-                    padding: "28px 16px 24px",
+                    padding: "28px 16px 20px",
                     cursor: "pointer",
                     transform: active ? "translateY(-2px)" : "translateY(0)",
                     boxShadow: active ? "0 8px 20px rgba(1,61,90,0.15)" : "none",
+                    minHeight: "44px",
                   }}
                   onMouseEnter={(e) => {
                     if (!active) {
@@ -147,10 +148,10 @@ export default function ROICalculator() {
                     )}
                   </div>
 
-                  <p className="font-bold mt-2 mb-2" style={{ fontSize: "20px", color: "var(--charcoal)" }}>
+                  <p className="font-bold mt-2 mb-2" style={{ fontSize: "18px", color: "var(--charcoal)" }}>
                     {tier.name}
                   </p>
-                  <p className="font-bold mb-2" style={{ fontSize: "36px", color: "var(--teal-primary)", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>
+                  <p className="font-bold mb-2" style={{ fontSize: "clamp(24px, 5vw, 36px)", color: "var(--teal-primary)", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>
                     {formatCurrency(tier.fee)}
                   </p>
                   <p className="mb-3 font-semibold" style={{ fontSize: "13px", color: "var(--sand)", letterSpacing: "0.02em" }}>
@@ -170,7 +171,7 @@ export default function ROICalculator() {
           style={{
             background: "var(--white)",
             borderRadius: "12px",
-            padding: "40px",
+            padding: "clamp(20px, 5vw, 40px)",
             boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
             marginBottom: "24px",
           }}
@@ -276,7 +277,7 @@ export default function ROICalculator() {
           ].map(({ label, value, highlight }) => (
             <div
               key={label}
-              className="text-center py-6 px-4"
+              className="text-center py-5 px-2 sm:px-4"
               style={{ background: highlight ? "rgba(1,61,90,0.05)" : "var(--white)" }}
             >
               <p
@@ -287,7 +288,7 @@ export default function ROICalculator() {
               </p>
               <p
                 className="font-bold"
-                style={{ fontSize: highlight ? "28px" : "24px", color: highlight ? "var(--teal-primary)" : "var(--charcoal)", fontVariantNumeric: "tabular-nums" }}
+                style={{ fontSize: highlight ? "clamp(18px, 4vw, 28px)" : "clamp(16px, 3.5vw, 24px)", color: highlight ? "var(--teal-primary)" : "var(--charcoal)", fontVariantNumeric: "tabular-nums" }}
               >
                 {value}
               </p>
@@ -329,7 +330,7 @@ export default function ROICalculator() {
             ].map(({ label, value, bg, color, labelColor }, i) => (
               <div
                 key={label}
-                className="p-6 text-center"
+                className="p-4 sm:p-6 text-center"
                 style={{
                   background: bg,
                   borderRight: i < 2 ? "1px solid var(--gray-200)" : "none",
@@ -338,7 +339,7 @@ export default function ROICalculator() {
                 <p className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: labelColor }}>
                   {label}
                 </p>
-                <p className="font-bold" style={{ fontSize: "22px", color, fontVariantNumeric: "tabular-nums" }}>
+                <p className="font-bold" style={{ fontSize: "clamp(15px, 3.5vw, 22px)", color, fontVariantNumeric: "tabular-nums" }}>
                   {value}
                 </p>
               </div>

@@ -37,8 +37,8 @@ export default function Services() {
   const [stagingExpanded, setStagingExpanded] = useState(false);
 
   return (
-    <section id="services" style={{ background: "var(--warm-neutral)", padding: "96px 0" }}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="services" style={{ background: "var(--warm-neutral)", padding: "clamp(48px, 8vw, 96px) 0" }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16">
           <p className="text-xs font-medium tracking-widest uppercase mb-3" style={{ color: "var(--sand)" }}>
@@ -251,7 +251,7 @@ export default function Services() {
                   onClick={() => setDeliveryExpanded((v) => !v)}
                   aria-expanded={deliveryExpanded}
                   className="flex items-center gap-1.5 font-semibold transition-all duration-200"
-                  style={{ background: "none", border: "none", padding: "10px 0 0", cursor: "pointer", fontSize: "13px", color: "var(--teal-primary)" }}
+                  style={{ background: "none", border: "none", padding: "12px 0", cursor: "pointer", fontSize: "13px", color: "var(--teal-primary)", minHeight: "44px" }}
                   onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--teal-hover)"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--teal-primary)"; }}
                 >
@@ -314,7 +314,7 @@ export default function Services() {
                   onClick={() => setStagingExpanded((v) => !v)}
                   aria-expanded={stagingExpanded}
                   className="flex items-center gap-1.5 font-semibold transition-all duration-200"
-                  style={{ background: "none", border: "none", padding: "10px 0 0", cursor: "pointer", fontSize: "13px", color: "var(--teal-primary)" }}
+                  style={{ background: "none", border: "none", padding: "12px 0", cursor: "pointer", fontSize: "13px", color: "var(--teal-primary)", minHeight: "44px" }}
                   onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--teal-hover)"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--teal-primary)"; }}
                 >

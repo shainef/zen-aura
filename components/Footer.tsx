@@ -73,7 +73,7 @@ export default function Footer() {
             © {year} Zen Aura Creative Labs. All rights reserved.
           </span>
           <span style={{ fontSize: "13px", color: "var(--gray-400)" }}>
-            Strategic procurement for complete living spaces
+            Strategic procurement for complete environments — interior and outdoor
           </span>
         </div>
       </div>

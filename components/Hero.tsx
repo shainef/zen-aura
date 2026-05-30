@@ -45,8 +45,8 @@ export default function Hero() {
           background: "rgba(255,255,255,0.96)",
         }} />
       </div>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 w-full" style={{ position: "relative", zIndex: 1 }}>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 w-full" style={{ position: "relative", zIndex: 1 }}>
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: Headline + CTAs */}
           <div>
@@ -77,8 +77,8 @@ export default function Hero() {
                 maxWidth: "480px",
               }}
             >
-              Strategic procurement + cultural curation = your dream home for
-              less. Complete spaces sourced across 10+ channels so you
+              Strategic procurement + cultural curation = your dream environment for
+              less. Interior and outdoor spaces sourced across 10+ channels so you
               don&apos;t have to.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -130,13 +130,13 @@ export default function Hero() {
           {/* Right: Floating white stats card */}
           <div className="lg:flex lg:justify-end">
             <div
-              className="w-full max-w-sm"
+              className="w-full max-w-sm mx-auto lg:mx-0"
               style={{
                 background: "var(--white)",
                 borderRadius: "8px",
                 borderTop: "4px solid var(--sand)",
                 boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
-                padding: "32px",
+                padding: "clamp(20px, 5vw, 32px)",
                 overflow: "hidden",
               }}
             >
@@ -185,13 +185,13 @@ export default function Hero() {
                 className="text-center"
                 style={{
                   background: "#1A1A1A",
-                  margin: "24px -32px -32px -32px",
-                  padding: "40px 32px",
+                  margin: "24px calc(clamp(20px, 5vw, 32px) * -1) calc(clamp(20px, 5vw, 32px) * -1)",
+                  padding: "clamp(28px, 5vw, 40px) clamp(20px, 5vw, 32px)",
                   borderRadius: "0 0 8px 8px",
                 }}
               >
                 <p
-                  style={{ fontSize: "80px", fontWeight: 800, color: "var(--white)", lineHeight: 1, fontVariantNumeric: "tabular-nums", marginBottom: "8px" }}
+                  style={{ fontSize: "clamp(56px, 14vw, 80px)", fontWeight: 800, color: "var(--white)", lineHeight: 1, fontVariantNumeric: "tabular-nums", marginBottom: "8px" }}
                 >
                   66.9%
                 </p>

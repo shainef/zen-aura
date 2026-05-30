@@ -86,10 +86,10 @@ export default function Navbar() {
 
           {/* Mobile button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
-            style={{ color: "var(--charcoal)" }}
+            style={{ color: "var(--charcoal)", padding: "11px", minWidth: "44px", minHeight: "44px", display: "flex", alignItems: "center", justifyContent: "center" }}
           >
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -104,8 +104,8 @@ export default function Navbar() {
               <a
                 key={href}
                 href={href}
-                className="py-3 text-sm font-medium"
-                style={{ color: "var(--charcoal)", borderBottom: "1px solid var(--gray-200)" }}
+                className="text-sm font-medium flex items-center"
+                style={{ color: "var(--charcoal)", borderBottom: "1px solid var(--gray-200)", minHeight: "44px", paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => setOpen(false)}
               >
                 {label}
@@ -113,8 +113,8 @@ export default function Navbar() {
             ))}
             <a
               href="#calculator"
-              className="mt-3 py-3 px-6 text-base font-semibold text-center"
-              style={{ background: "var(--teal-primary)", color: "var(--white)", borderRadius: "4px" }}
+              className="mt-3 text-base font-semibold text-center flex items-center justify-center"
+              style={{ background: "var(--teal-primary)", color: "var(--white)", borderRadius: "4px", minHeight: "48px" }}
               onClick={() => setOpen(false)}
             >
               Calculate Savings

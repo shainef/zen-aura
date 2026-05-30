@@ -21,7 +21,8 @@ const STATS = [
 const INCLUDED = [
   "Designer furniture (West Elm, Eternity Modern, Rove Concepts)",
   "International art (Cuba, Colombia, Indonesia, Mexico, USA)",
-  "Complete outdoor entertaining setup",
+  "Outdoor & backyard living (patio, entertaining, landscape pieces)",
+  "Complete outdoor entertaining setup (grill, heater, fire bowl, furniture)",
   "Storage solutions & home organization",
   "Baby gear & family-friendly pieces",
   "Tools & functional equipment",
@@ -58,11 +59,11 @@ export default function CaseStudy() {
             Proof of Concept
           </p>
           <h2 className="text-4xl font-extrabold tracking-tight text-[#1A1A1A] md:text-5xl">
-            My Living Space
+            Spaces We&apos;ve Curated
           </h2>
         </div>
 
-        {/* Asymmetric 60 / 40 split */}
+        {/* Interior flagship — asymmetric 60 / 40 split */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-5 md:items-center md:gap-10">
 
           {/* CAROUSEL — 60% (3 of 5 cols) */}
@@ -70,7 +71,7 @@ export default function CaseStudy() {
             className="relative md:col-span-3"
             role="region"
             aria-roledescription="carousel"
-            aria-label="My Living Space gallery"
+            aria-label="Interior spaces gallery"
             tabIndex={0}
             onKeyDown={onKeyDown}
             onTouchStart={onTouchStart}
@@ -108,7 +109,7 @@ export default function CaseStudy() {
                 type="button"
                 onClick={prev}
                 aria-label="Previous photo"
-                className="absolute left-3 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white/85 text-[#013D5A] shadow-md transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#013D5A] focus-visible:ring-offset-2"
+                className="absolute left-3 top-1/2 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full bg-white/85 text-[#013D5A] shadow-md transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#013D5A] focus-visible:ring-offset-2"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M15 6l-6 6 6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -120,7 +121,7 @@ export default function CaseStudy() {
                 type="button"
                 onClick={next}
                 aria-label="Next photo"
-                className="absolute right-3 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white/85 text-[#013D5A] shadow-md transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#013D5A] focus-visible:ring-offset-2"
+                className="absolute right-3 top-1/2 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full bg-white/85 text-[#013D5A] shadow-md transition hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#013D5A] focus-visible:ring-offset-2"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -190,6 +191,39 @@ export default function CaseStudy() {
           </div>
 
         </div>
+
+        {/* Outdoor case study — placeholder (photos pending) */}
+        <div className="mt-12 rounded-2xl overflow-hidden border border-[#E5E7EB]" style={{ background: "#F0EDE8" }}>
+          <div className="grid grid-cols-1 md:grid-cols-5 md:items-stretch">
+
+            {/* Image slot */}
+            <div
+              className="md:col-span-3 flex flex-col items-center justify-center gap-3 text-center"
+              style={{ minHeight: "280px", background: "#1A1A1A" }}
+            >
+              <div style={{ width: "32px", height: "1px", background: "#C9A961" }} />
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#9CA3AF]">
+                Photos Coming Soon
+              </p>
+              <p className="text-xs text-[#4B5563]">Backyard / Outdoor Living</p>
+              <div style={{ width: "32px", height: "1px", background: "#C9A961" }} />
+            </div>
+
+            {/* Caption */}
+            <div className="md:col-span-2 flex flex-col justify-center p-8">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#C9A961]">
+                Outdoor Space
+              </p>
+              <h3 className="mb-3 text-2xl font-extrabold tracking-tight text-[#1A1A1A]">
+                Backyard / Outdoor Living
+              </h3>
+              <p className="text-sm leading-relaxed text-[#4A4A4A]">
+                A fully curated outdoor environment — sourced, not retail. Patio furniture, entertaining setup, landscape pieces, and more. <span className="text-[#C9A961] font-semibold">Photos pending.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

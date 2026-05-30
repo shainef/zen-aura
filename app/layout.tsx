@@ -19,12 +19,12 @@ const josefin = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Zen Aura | Designer Spaces at 70% Below Retail",
   description:
-    "Strategic procurement for complete living spaces. Furniture, art, and functional pieces at 60–70% below retail. Proven track record: $24K spaces for $8K.",
+    "Zen Aura curates complete interior and outdoor environments through strategic sourcing — designer furniture, art, and outdoor pieces at 60–70% below retail.",
   keywords:
-    "interior design, furniture sourcing, discount furniture, home design, art curation, procurement, Zen Aura",
+    "interior design, outdoor living, furniture sourcing, discount furniture, home design, art curation, procurement, Zen Aura",
   openGraph: {
     title: "Zen Aura | Designer Spaces at 70% Below Retail",
-    description: "Complete living spaces through strategic procurement",
+    description: "Complete interior and outdoor environments through strategic procurement — 60–70% below retail.",
     images: ["/og-image.jpg"],
   },
 };

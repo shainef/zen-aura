@@ -10,8 +10,8 @@ const props = [
   {
     number: "02",
     title: "Complete Spaces",
-    tagline: "Furniture + Art + Functional Pieces + Design",
-    items: ["Not just furniture — entire living spaces", "Culturally-curated art from 5 countries", "Tools, baby gear, outdoor living", "Cohesive aesthetic, not random deals"],
+    tagline: "Interiors + Outdoor + Art + Functional Pieces",
+    items: ["Not just furniture — entire interior and outdoor spaces", "Culturally-curated art from 5 countries", "Outdoor living: patios, backyards, entertaining setups", "Tools, baby gear, functional pieces", "Cohesive aesthetic, not random deals"],
   },
   {
     number: "03",
