@@ -24,9 +24,28 @@ export const metadata: Metadata = {
   keywords:
     "interior design, outdoor living, furniture sourcing, discount furniture, home design, art curation, procurement, Zen Aura",
   openGraph: {
-    title: "Zen Aura | Designer Spaces at 70% Below Retail",
-    description: "Complete interior and outdoor environments through strategic procurement — 60–70% below retail.",
-    images: ["/og-image.jpg"],
+    title: "Designer Spaces at 70% Below Retail",
+    description:
+      "Interior and outdoor spaces sourced across 10+ channels. Strategic procurement at 60–70% below retail.",
+    url: "https://zenaura.design",
+    siteName: "Zen Aura",
+    images: [
+      {
+        url: "https://zenaura.design/images/hero-living.jpg",
+        width: 2000,
+        height: 1500,
+        alt: "Curated living room sourced at 70% below retail — Zen Aura Creative Labs",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Designer Spaces at 70% Below Retail",
+    description:
+      "Strategic procurement for complete environments — interior and outdoor — at 60–70% below retail.",
+    images: ["https://zenaura.design/images/hero-living.jpg"],
   },
 };
 
